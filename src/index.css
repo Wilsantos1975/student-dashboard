@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  background-color: #5c946f;
+  text-align: center;
+  
+  width: auto;
+  /* grid-area: header; */
+}
+.main {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.App {
+ 
+  box-sizing: border-box;
+  /* height: 100%; */
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  /* grid-template-areas: "header header" "aside main"; */
+}
+
+.student-card {
+  list-style: none;
+  border: 1px solid #5c946f;
+  margin: 12px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-areas: "image" "info" "ontrack"; */
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.cohort-list {
+  /* display: grid; */
+  border: 20px;
+  height: 100%;
+  /* background-color: bisque; */
+  /* grid-area: aside; */
+}
+.cohort-list h3 {
+    padding-left: 10px;
+}
+
+.student-list {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 2fr; */
+  max-height: 600px;
+  margin-left: 60px;
+
+  /* grid-area: main; */
+  overflow-y: scroll;
+}
+
+
+
+.cohort-list li {
+  list-style: none;
+  text-decoration: underline;
+  padding: 10px;
+  border-bottom: 1px solid #5c946f;
+}
+
+/* .student-list li {
+  list-style: none;
+} */
+
+.birthday span {
+  color: green;
+}
+
+img {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid #5c946f;
+  float: left;
+  grid-template-areas: "auto";
+  height: 150px;
+  width: 150px;
+}
+
+ul {
+  height: 100%;
+  list-style: none;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.student-list span {
+  color: #5c946f;
+}
+
+.studentInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+}
+
+.oneonone {
+    border: 2px solid #5c946f;
+    width: 100%;
+}
